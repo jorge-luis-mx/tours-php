@@ -1,3 +1,14 @@
+<?php
+
+session_start();
+
+if (!isset($_SESSION['user'])) {
+
+  header('location:index.php');
+}
+?>
+
+
 <!doctype html>
 <html lang="en">
 
@@ -123,6 +134,7 @@
     integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
     crossorigin="anonymous"></script>
   <script src="js/send.js"></script>
+  <!-- <script src="js/modal_succes"></script> -->
   <script>
 
   $(document).ready(function(){

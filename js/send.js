@@ -87,6 +87,7 @@ function sumaDSP(){
   var total = $('#total');
   total.empty();
   var num_persona = parseInt(document.getElementById("diaSP").value);
+  console.log(num_persona);
   let suma = num_persona +1;
 
   if(suma>=100){
@@ -123,6 +124,8 @@ function restaDSP(){
   
 
     var num_persona  = parseInt(document.getElementById("diaSP").value);
+
+    
     let suma=num_persona-1;
     if(suma<=1){
       document.getElementById("diaSP").value = 1;
@@ -189,4 +192,16 @@ console.log(res);
     alert(c);
   });
 
+}
+
+
+
+////login
+
+function login(){
+
+ var email = $('#email').val();
+ var pass = $('#password').val();
+
+ alert(email);
 }
